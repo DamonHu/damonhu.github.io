@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>HPtips</title>
+  <title>HPtips - high performance tips</title>
   
   <subtitle>high performance tips</subtitle>
   <link href="https://www.hptips.com/atom.xml" rel="self"/>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test</title>
-    <link href="https://www.hptips.com/2021/86fe6286d2a7"/>
-    <id>https://www.hptips.com/2021/86fe6286d2a7</id>
+    <link href="https://www.hptips.com/2021/86fe6286d2a7.html"/>
+    <id>https://www.hptips.com/2021/86fe6286d2a7.html</id>
     <published>2021-04-05T14:04:00.000Z</published>
     <updated>2021-04-05T14:04:00.027Z</updated>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://www.hptips.com/2021/f5fef0a26648"/>
-    <id>https://www.hptips.com/2021/f5fef0a26648</id>
+    <link href="https://www.hptips.com/2021/f5fef0a26648.html"/>
+    <id>https://www.hptips.com/2021/f5fef0a26648.html</id>
     <published>2021-04-05T13:57:31.662Z</published>
     <updated>2021-04-05T13:57:31.662Z</updated>
     
