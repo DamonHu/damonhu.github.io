@@ -3,5 +3,6 @@
     word-break:break-all;
     -webkit-line-clamp: 3;
     line-height: 30px;
-    color: darkgoldenrod;
+    color: darkgoldenrod !important;
+    white-space: pre-wrap;
 }
