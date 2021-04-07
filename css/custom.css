@@ -1,0 +1,7 @@
+.post-title {
+    display: inline-block;
+    word-break:break-all;
+    -webkit-line-clamp: 3;
+    line-height: 30px;
+    color: darkgoldenrod;
+}
