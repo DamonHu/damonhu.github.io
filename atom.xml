@@ -6,7 +6,7 @@
   <link href="https://www.hptips.com/atom.xml" rel="self"/>
   
   <link href="https://www.hptips.com/"/>
-  <updated>2021-04-07T13:59:38.365Z</updated>
+  <updated>2021-04-08T13:19:31.243Z</updated>
   <id>https://www.hptips.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>import 用于导入 module ，比如`import UIKit`。不过有时候我们使用 pod 导入第三方库的时候，如果使用 import 需要每个文件都导入 import SwiftyJSON 才行，所有还有另一种方式就是使用@_exported import SwiftyJSON，统一导入一次，其他地方都可用。</title>
+    <link href="https://www.hptips.com/2021/ee7f25dd47a3.html"/>
+    <id>https://www.hptips.com/2021/ee7f25dd47a3.html</id>
+    <published>2021-04-08T13:18:51.000Z</published>
+    <updated>2021-04-08T13:19:31.243Z</updated>
+    
+    <content type="html"><![CDATA[<p>如有不同见解或者更多相关tips，可以留言讨论哦~</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;如有不同见解或者更多相关tips，可以留言讨论哦~&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Swift" scheme="https://www.hptips.com/categories/Swift/"/>
+    
+    
+    <category term="swift" scheme="https://www.hptips.com/tags/swift/"/>
+    
+    <category term="tips" scheme="https://www.hptips.com/tags/tips/"/>
+    
+  </entry>
   
   <entry>
     <title>Swift-#available这里也算是对开发方式的一个改进，也更加体现出swift一直强调的安全</title>
