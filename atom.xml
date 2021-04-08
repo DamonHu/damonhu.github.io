@@ -6,7 +6,7 @@
   <link href="https://www.hptips.com/atom.xml" rel="self"/>
   
   <link href="https://www.hptips.com/"/>
-  <updated>2021-04-08T14:06:50.826Z</updated>
+  <updated>2021-04-08T14:10:28.850Z</updated>
   <id>https://www.hptips.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.hptips.com/2021/3d9f0cbf4702.html"/>
+    <id>https://www.hptips.com/2021/3d9f0cbf4702.html</id>
+    <published>2021-04-08T14:09:44.000Z</published>
+    <updated>2021-04-08T14:10:28.850Z</updated>
+    
+    <content type="html"><![CDATA[<p>如有不同见解或者更多相关tips，可以留言讨论哦~</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;如有不同见解或者更多相关tips，可以留言讨论哦~&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Swift" scheme="https://www.hptips.com/categories/Swift/"/>
+    
+    
+    <category term="tips" scheme="https://www.hptips.com/tags/tips/"/>
+    
+    <category term="Swift" scheme="https://www.hptips.com/tags/Swift/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -44,11 +71,11 @@
   </entry>
   
   <entry>
-    <title>Swift-#available这里也算是对开发方式的一个改进，也更加体现出swift一直强调的安全</title>
+    <title></title>
     <link href="https://www.hptips.com/2021/3333e030a0cd.html"/>
     <id>https://www.hptips.com/2021/3333e030a0cd.html</id>
     <published>2021-04-07T13:59:22.000Z</published>
-    <updated>2021-04-07T13:59:38.365Z</updated>
+    <updated>2021-04-08T14:09:07.677Z</updated>
     
     <content type="html"><![CDATA[<p>如有不同见解或者更多相关tips，可以留言讨论哦~</p>]]></content>
     
@@ -64,18 +91,18 @@
     <category term="Swift" scheme="https://www.hptips.com/categories/Swift/"/>
     
     
-    <category term="swift" scheme="https://www.hptips.com/tags/swift/"/>
-    
     <category term="tips" scheme="https://www.hptips.com/tags/tips/"/>
+    
+    <category term="Swift" scheme="https://www.hptips.com/tags/Swift/"/>
     
   </entry>
   
   <entry>
-    <title>Swift-@available放在函数（func），类（class）或者协议（protocol）前面。表明这些类型适用的平台和操作系统</title>
+    <title></title>
     <link href="https://www.hptips.com/2021/92c41bf7b83a.html"/>
     <id>https://www.hptips.com/2021/92c41bf7b83a.html</id>
     <published>2021-04-07T13:19:35.000Z</published>
-    <updated>2021-04-07T13:59:46.654Z</updated>
+    <updated>2021-04-08T14:09:29.742Z</updated>
     
     <content type="html"><![CDATA[<p>如有不同见解或者更多相关tips，可以留言讨论哦~</p>]]></content>
     
@@ -91,9 +118,9 @@
     <category term="Swift" scheme="https://www.hptips.com/categories/Swift/"/>
     
     
-    <category term="swift" scheme="https://www.hptips.com/tags/swift/"/>
-    
     <category term="tips" scheme="https://www.hptips.com/tags/tips/"/>
+    
+    <category term="Swift" scheme="https://www.hptips.com/tags/Swift/"/>
     
   </entry>
   
