@@ -5,8 +5,8 @@
     font-weight: 600 !important;
     color: darkgoldenrod !important;
     white-space: pre-wrap !important;
+    margin-left: 20px;
 }
 .item-post{
     margin-top: 50px;
-    padding-right: 20px;
 }
