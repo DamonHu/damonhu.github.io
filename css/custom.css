@@ -6,7 +6,7 @@
     color: darkgoldenrod !important;
     white-space: pre-wrap !important;
     margin-left: 16px;
-    max-width: 540px !important;
+    /* max-width: 540px !important; */
 
 }
 .item-post{
