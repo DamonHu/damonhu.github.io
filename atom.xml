@@ -6,7 +6,7 @@
   <link href="https://www.hptips.com/atom.xml" rel="self"/>
   
   <link href="https://www.hptips.com/"/>
-  <updated>2021-04-09T14:02:09.952Z</updated>
+  <updated>2021-04-10T11:55:51.574Z</updated>
   <id>https://www.hptips.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>/Git/ git pull之前先将本地的修改commit提交一下防止丢失</title>
+    <link href="https://www.hptips.com/2021/30ab13629d80.html"/>
+    <id>https://www.hptips.com/2021/30ab13629d80.html</id>
+    <published>2021-04-10T11:54:36.000Z</published>
+    <updated>2021-04-10T11:55:51.574Z</updated>
+    
+    <content type="html"><![CDATA[<p>如有不同见解或者更多相关tips，可以留言讨论哦~</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;如有不同见解或者更多相关tips，可以留言讨论哦~&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://www.hptips.com/categories/Git/"/>
+    
+    
+    <category term="Swift" scheme="https://www.hptips.com/tags/Swift/"/>
+    
+    <category term="tips" scheme="https://www.hptips.com/tags/tips/"/>
+    
+  </entry>
   
   <entry>
     <title>/Swift/ where条件判断，为真时执行代码，为假时不执行代码：</title>
