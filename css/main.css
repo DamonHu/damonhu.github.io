@@ -21,6 +21,12 @@ a {
 	align-items: center;
 	justify-content: flex-end;
 }
+.index-header-logo{
+	position: absolute;
+	left: 10px;
+	width: 262px;
+	height: 70px;
+}
 .index-header-item{
 	font-size: 18px;
 	color: #333333;
