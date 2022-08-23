@@ -2,6 +2,10 @@ a {
 	color: #999999;
 }
 
+body {
+	min-width: 1200px;
+}
+
 .container{
 	position: relative;
 	background-color: #ffffff;
@@ -11,6 +15,7 @@ a {
 	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
 .index-header{
+	min-width: 1200px;
 	position: fixed;
 	z-index: 999;
 	background-color: #ffffff;
