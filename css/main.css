@@ -124,7 +124,9 @@ body {
 }
 
 .index-banner-item{
-	height: 100%;
+	width: 472px;
+	height: 300px;
+	object-fit: cover;
 }
 .index-intro {
 	width: 90%;
