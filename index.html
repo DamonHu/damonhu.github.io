@@ -225,6 +225,14 @@
                 height: 0.23rem;
             }
         }
+
+        .dev-info{
+            margin-top: 0.2rem;
+            /* width: 80%; */
+            max-width: 4.5rem;
+            line-height: 1.5;
+            text-align: center;
+        }
     </style>
     <script>
         var _hmt = _hmt || [];
@@ -292,7 +300,7 @@
                         <p class="icon">📝</p>
                         <p style="font-size: 0.18rem; font-weight: bold; ">MarkDown编辑器</p>
                     </div>
-                    <p style="margin-top: 0.1rem;">t.itYuFu.com/md</p>
+                    <p style="margin-top: 0.1rem;">微信公众号排版美化</p>
                 </div>
             </a>
             <a href="https://chat.peatool.com" target="_blank">
@@ -301,7 +309,7 @@
                         <p class="icon">♊️</p>
                         <p style="font-size: 0.18rem; font-weight: bold; ">Gemini Chat</p>
                     </div>
-                    <p style="margin-top: 0.1rem;">chat.peaTool.com</p>
+                    <p style="margin-top: 0.1rem;">谷歌聊天工具</p>
                 </div>
             </a>
             <a href="https://videodd.com" target="_blank">
@@ -347,6 +355,11 @@
             </a>
         </div>
     </section>
+    <!-- <section id="info" style="margin-top: 0.8rem;">
+        <p>调试信息: 仅用于前端展示</p>
+        <div class="dev-info" id="ip"></div>
+        <div class="dev-info" id="ua"></div>
+    </section> -->
     <script>
         function showImage() {
             var image = document.getElementById("qr-image");
@@ -357,6 +370,13 @@
             }
         }
     </script>
+    <!-- <script type="application/javascript">
+        function getIP(json) {
+            document.getElementById("ip").innerHTML = "IP: " + json.ip
+            document.getElementById("ua").innerHTML = "UA: " + navigator.userAgent
+        }
+    </script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
 </body>
 <footer>
 
