@@ -175,11 +175,11 @@
             flex-wrap: wrap;
             margin-top: 0.2rem;
             max-width: 11rem;
+        }
 
-            a {
+        a {
                 text-decoration: none;
             }
-        }
 
         .blog-list-item {
             position: relative;
@@ -213,17 +213,19 @@
                 line-height: 0.3rem;
                 font-size: 0.18rem;
                 font-weight: bold;
-            }
-
-            p {
                 margin: 0;
-                width: initial;
             }
+        }
 
-            img {
-                width: 0.23rem;
-                height: 0.23rem;
-            }
+        .blog-list-item-title-text {
+            margin: 0;
+            width: initial;
+        }
+
+
+        .blog-list-item-title-icon {
+            width: 0.23rem;
+            height: 0.23rem;
         }
 
         .dev-info{
@@ -280,16 +282,16 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">📤</p>
-                        <p style="font-size: 0.18rem; font-weight: bold; ">支付宝链接转码</p>
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">支付宝链接转码</p>
                     </div>
-                    <p style="margin-top: 0.1rem;">生成scheme链接</p>
+                    <p class="blog-list-item-title-text" style="margin-top: 0.1rem;">生成scheme链接</p>
                 </div>
             </a>
             <a href="https://fullnull.com/aliurldecode" target="_blank">
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">📥</p>
-                        <p style="font-size: 0.18rem; font-weight: bold; ">支付宝链接转码</p>
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">支付宝链接转码</p>
                     </div>
                     <p style="margin-top: 0.1rem;">scheme链接解码</p>
                 </div>
@@ -298,7 +300,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">📝</p>
-                        <p style="font-size: 0.18rem; font-weight: bold; ">MarkDown编辑器</p>
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">MarkDown编辑器</p>
                     </div>
                     <p style="margin-top: 0.1rem;">微信公众号排版美化</p>
                 </div>
@@ -307,7 +309,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">🎥</p>
-                        <p style="font-size: 0.18rem; font-weight: bold; ">视频下载</p>
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">视频下载</p>
                     </div>
                     <p style="margin-top: 0.1rem;">videoDD.com</p>
                 </div>
@@ -316,7 +318,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">🌐</p>
-                        <p style="font-size: 0.18rem; font-weight: bold; ">AI网址导航</p>
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">AI网址导航</p>
                     </div>
                     <p style="margin-top: 0.1rem;">lazypig.net</p>
                 </div>
@@ -325,7 +327,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">🍪</p>
-                        <p style="font-size: 0.18rem; font-weight: bold; ">Gemini Chat</p>
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">Gemini Chat</p>
                     </div>
                     <p style="margin-top: 0.1rem;">谷歌聊天工具</p>
                 </div>
@@ -338,8 +340,8 @@
             <a href="https://ityufu.com" target="_blank">
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
-                        <img src="https://cdn.ityufu.com/static/icon-cn.png" alt="IT渔夫" style="margin-right: 0.05rem;">
-                        <p style="font-size: 0.18rem; font-weight: bold; ">中文</p>
+                        <img src="https://cdn.ityufu.com/static/icon-cn.png" alt="IT渔夫" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">中文</p>
                     </div>
                     <p style="margin-top: 0.1rem;">itYuFu.com</p>
                 </div>
@@ -347,8 +349,8 @@
             <a href="https://itfisher.com" target="_blank">
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
-                        <img src="https://cdn.ityufu.com/static/icon-en.png" alt="IT Fisher" style="margin-right: 0.05rem;">
-                        <p style="font-size: 0.18rem; font-weight: bold; ">English</p>
+                        <img src="https://cdn.ityufu.com/static/icon-en.png" alt="IT Fisher" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
+                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">English</p>
                     </div>
                     <p style="margin-top: 0.1rem;">itFisher.com</p>
                 </div>
