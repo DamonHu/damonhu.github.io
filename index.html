@@ -48,8 +48,7 @@
             padding-top: 0.5rem;
         }
 
-        h1,
-        h2 {
+        h1, h2 {
             color: #1a1a1a;
         }
 
@@ -108,15 +107,19 @@
         }
 
         p {
-            margin: auto;
             color: #333333;
             line-height: 1.8;
-            width: 80%;
-            max-width: 8rem;
             word-break: break-all;
             text-align: center;
             font-size: 0.16rem;
             font-weight: 400;
+            margin: 0;
+        }
+
+        .content-text {
+            margin: auto;
+            width: 80%;
+            max-width: 8rem;
         }
 
         table {
@@ -158,8 +161,7 @@
             }
         }
 
-        img,
-        h1 {
+        img, h1 {
             animation: fadeInUp 1s ease-in-out;
         }
 
@@ -178,8 +180,9 @@
         }
 
         a {
-                text-decoration: none;
-            }
+            text-decoration: none;
+            color: #009874;
+        }
 
         .blog-list-item {
             position: relative;
@@ -213,13 +216,18 @@
                 line-height: 0.3rem;
                 font-size: 0.18rem;
                 font-weight: bold;
-                margin: 0;
             }
+        }
+
+        .blog-list-item-title-icon {
+            width: 0.23rem;
+            height: 0.23rem;
         }
 
         .blog-list-item-title-text {
             margin: 0;
-            width: initial;
+            font-size: 0.18rem; 
+            font-weight: bold;
         }
 
 
@@ -282,7 +290,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">📤</p>
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">支付宝链接转码</p>
+                        <p class="blog-list-item-title-text">支付宝链接转码</p>
                     </div>
                     <p class="blog-list-item-title-text" style="margin-top: 0.1rem;">生成scheme链接</p>
                 </div>
@@ -291,7 +299,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">📥</p>
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">支付宝链接转码</p>
+                        <p class="blog-list-item-title-text">支付宝链接转码</p>
                     </div>
                     <p style="margin-top: 0.1rem;">scheme链接解码</p>
                 </div>
@@ -300,7 +308,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">📝</p>
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">MarkDown编辑器</p>
+                        <p class="blog-list-item-title-text">MarkDown编辑器</p>
                     </div>
                     <p style="margin-top: 0.1rem;">微信公众号排版美化</p>
                 </div>
@@ -309,7 +317,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">🎥</p>
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">视频下载</p>
+                        <p class="blog-list-item-title-text">视频下载</p>
                     </div>
                     <p style="margin-top: 0.1rem;">videoDD.com</p>
                 </div>
@@ -318,7 +326,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">🌐</p>
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">AI网址导航</p>
+                        <p class="blog-list-item-title-text">AI网址导航</p>
                     </div>
                     <p style="margin-top: 0.1rem;">lazypig.net</p>
                 </div>
@@ -327,7 +335,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">🍪</p>
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">Gemini Chat</p>
+                        <p class="blog-list-item-title-text">Gemini Chat</p>
                     </div>
                     <p style="margin-top: 0.1rem;">谷歌聊天工具</p>
                 </div>
@@ -341,7 +349,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <img src="https://cdn.ityufu.com/static/icon-cn.png" alt="IT渔夫" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">中文</p>
+                        <p class="blog-list-item-title-text">中文</p>
                     </div>
                     <p style="margin-top: 0.1rem;">itYuFu.com</p>
                 </div>
@@ -350,7 +358,7 @@
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <img src="https://cdn.ityufu.com/static/icon-en.png" alt="IT Fisher" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
-                        <p class="blog-list-item-title-text" style="font-size: 0.18rem; font-weight: bold; ">English</p>
+                        <p class="blog-list-item-title-text">English</p>
                     </div>
                     <p style="margin-top: 0.1rem;">itFisher.com</p>
                 </div>
