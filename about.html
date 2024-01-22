@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="IT渔夫胡东东博客升级之后的项目,是一个优秀的技术博客. 包括了iOS开发、小程序开发、前端技术开发总结和IT资讯、IT观点分享、常用小工具等内容">
+    <meta name="author" content="ITFisher">
+    <meta name="keywords"
+        content="IT渔夫,ITFisher,ityufu,hudongdong,blog,ios,cocoapod,swift,swiftui,zxkit,uikit,android,ios开发,开发博客,技术博客,开发大佬,大佬博客,胡东东,小程序开发,微信小程序,支付宝小程序,Cocos2dx,web前端,前端开发,swift开发、swiftUI开发、web开发、微信小程序开发、支付宝小程序开发">
+    <title>IT渔夫 - ITFisher - 胡东东博客 - Damon胡东东</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.ityufu.com/js/jquery-3.6.0.min.js"></script>
+    <style>
+        html {
+            background: url(./static/button-bg.png) fixed #f3f3f3;
+            font-size: 100px;
+        }
+
+        @media screen and (max-width: 768px) {
+            html {
+                font-size: 80px;
+            }
+        }
+
+        body {
+            font-family: -apple-system-font, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #1a1a1a;
+            margin: 0rem;
+            background-color: transparent;
+            font-size: 0.16rem;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        footer {
+            margin-top: 0.4rem;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .language-translate{
+            position: absolute;
+            margin-left: 3.6rem;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        .language-translate-image{
+            width: 0.25rem;
+            height: 0.25rem;
+            border-radius: 0;
+            animation: none;
+            margin-right: 0.06rem;
+        }
+
+        .img-avatar {
+            width: 130px;
+            height: 130px;
+            border: 0 solid
+        }
+
+        .img-avatar:hover {
+            border-width: 5px;
+            animation: rotation .5s;
+            border-width: 5px;
+            border-color: #009874;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg) scale(1.0);
+                
+            }
+            to {
+                -webkit-transform: rotate(360deg) scale(1.5);
+            }
+        }
+
+        h1, h2 {
+            color: #1a1a1a;
+        }
+
+        h2 {
+            text-align: center;
+            line-height: 1.75;
+            font-size: 0.15rem;
+            font-weight: bold;
+            display: table;
+            margin: 4em auto 2em;
+            padding: 0 0.2em;
+            background: #009874;
+            color: #fff;
+            border-radius: 0.04rem;
+            padding-left: 0.16rem;
+            padding-right: 0.06rem;
+            border-bottom: 0.04rem solid #f3f3f3;
+            border-right: 0.1rem solid transparent;
+
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .header-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.1rem;
+        }
+
+        .header-links-icon {
+            width: 0.24rem;
+            height: 0.24rem;
+            padding: 0.08rem;
+            margin: 0.12rem;
+            background-color: #1a1a1a;
+        }
+
+        .header-links-icon:hover {
+            background-color: #1a1a1a;
+            box-shadow: 0 0.08rem 0.16rem rgba(0, 0, 0, 0.5);
+            transform: scale(1.15);
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+        }
+
+        section {
+            margin-top: 0.1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            color: #333333;
+            line-height: 1.8;
+            word-break: break-all;
+            text-align: center;
+            font-size: 0.16rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .content-text {
+            margin: auto;
+            width: 80%;
+            max-width: 8rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: max-content;
+            margin-top: 0.2rem;
+        }
+
+        th,
+        td {
+            border: 0.01rem solid #cccccc;
+            text-align: left;
+            padding: 0.18rem;
+            white-space: nowrap;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding: 0.05rem 0.3rem;
+        }
+
+        li {
+            margin-bottom: 0.08rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(0.2rem);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img, h1 {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        #qr-image {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #009874;
+        }
+
+        /* 博客列表 */
+        .blog-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 0.2rem;
+            max-width: 11rem;
+        }
+
+        .blog-list-item {
+            position: relative;
+            width: 2rem;
+            margin: 0.2rem;
+            height: 1rem;
+            background-color: #fcfcfc;
+            border-radius: 0.1rem;
+            box-shadow: 0 0.08rem 0.16rem rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-list-item:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0.08rem 0.16rem rgba(0, 0, 0, 0.3);
+            transform: scale(1.03);
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .blog-list-item-title {
+            padding-top: 0.13rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .icon {
+                width: 0.3rem;
+                height: 0.3rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 0.3rem;
+                font-size: 0.18rem;
+                font-weight: bold;
+            }
+        }
+
+        .blog-list-item-title-icon {
+            width: 0.23rem;
+            height: 0.23rem;
+        }
+
+        .blog-list-item-title-text {
+            font-size: 0.18rem; 
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .footer-span {
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+        }
+    </style>
+    <!-- baidu统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?0b413e4d47d9ff9fb338e05ddc030428";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>   
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="https://cdn.ityufu.com/static/avatar.png" alt="DamonHu" class="img-avatar" />
+        </a>
+        <div class="language-translate">
+            <a href="./about_en.html" style="display: flex; align-items: center;">
+                <img class="language-translate-image" src="https://cdn.ityufu.com/static/icon-language.png"/>
+                <p>English</p>
+            </a>
+        </div>
+        <h1>DamonHu</h1>
+        <p>Software Developer</p>
+        <p>坚韧沉稳 谦逊忍耐</p>
+        <div class="header-links">
+            <a href="https://hdd.im">
+                <img src="./static/icon-home.png" alt="github" class="header-links-icon">
+            </a>
+            <a href="https://github.com/DamonHu" target="_blank">
+                <img src="https://cdn.ityufu.com/static/github.png" alt="github" class="header-links-icon">
+            </a>
+            <a href="https://twitter.com/damonhu_x" target="_blank">
+                <img src="https://cdn.ityufu.com/static/twitter.png" alt="zhihu" class="header-links-icon">
+            </a>
+            <img src="https://cdn.ityufu.com/static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
+                style="cursor: pointer;">
+            <a href="https://weibo.com/u/1916674981" target="_blank">
+                <img src="https://cdn.ityufu.com/static/weibo.png" alt="weibo" class="header-links-icon">
+            </a>
+            <a href="mailto:dong765@qq.com" target="_blank">
+                <img src="https://cdn.ityufu.com/static/email.png" alt="email" class="header-links-icon">
+            </a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
+                src="https://cdn.ityufu.com/static/gongzhonghao.jpg">
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="blog-list" style="margin-top: 0rem; ">
+            <a href="./index.html">
+                <div class="blog-list-item" style="background-color: #333333;">
+                    <div class="blog-list-item-title">
+                        <img src="./static/icon-home.png" class="blog-list-item-title-icon" alt="IT渔夫" style="margin-right: 0.05rem;">
+                        <p class="blog-list-item-title-text" style="color: #ffffff;">hdd.im</p>
+                    </div>
+                    <p style="margin-top: 0.1rem; font-weight: bold; color: #ffffff;"> << 返回首页</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>关于我</h2>
+        <p style="text-align: left;" class="content-text">👋
+            你好，我是胡东东（DamonHu），91年的天蝎座。一个资深的iOS开发者。我曾经开发过cocos2d-x手机游戏、微信&支付宝&百度小程序，也开发过区块链项目和数字藏品业务。业余时间我也会写一写博客，开发一些开源代码和网站。
+        </p>
+        <p style="text-align: left;" class="content-text">👨‍💻 目前在负责一款小程序项目，日活40万左右，如有商务合作或者换量业务欢迎联系我。</p>
+        <p style="font-size: 0.18rem; font-weight: bold; text-align: left;" class="content-text">🧐 目前对AI很感兴趣，正在积极学习AI工具</p>
+    </section>
+
+
+    <section id="project">
+        <h2>项目</h2>
+        <ul>
+            <li>守护签</li>
+            <li>步步挣</li>
+            <li>颜值招聘</li>
+            <li>疯狂捕鱼</li>
+            <li>加勒比海盗OL</li>
+            <li>战国之道</li>
+            <li>……</li>
+        </ul>
+    </section>
+    
+
+    <section id="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>Swift</li>
+            <li>Objective-C</li>
+            <li>Cocos2d-x</li>
+            <li>HTML5&CSS3</li>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>工作经验</h2>
+        <ul>
+            <li>上海勤联物联网有限公司 - 技术开发总监 - 2020-06 - 至今</li>
+            <li>上海勤联物联网有限公司 - 前端开发经理 - 2017.07 - 2020-06</li>
+            <li>上海际动网络科技有限公司 - 游戏开发工程师 - 2015.01 - 2017.06</li>
+            <li>北京掌趣科技股份有限公司 - 游戏开发工程师 - 2013.09 - 2015.01</li>
+        </ul>
+    </section>
+
+    <section id="study">
+        <h2>教育背景</h2>
+        <p>工学学士 - 信息工程 - 河南科技大学</p>
+    </section>
+
+    <script>
+        function showImage() {
+            var image = document.getElementById("qr-image");
+            if (image.style.display === "none") {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        }
+    </script>     
+</body>
+<footer>
+    <hr style="height:1px;border:none;border-top:1px dashed rgba(0, 152, 116, 0.3);" />
+    <p style="margin-top: 0.5rem;">Copyright © 2019 DamonHu. All rights reserved.</p>
+    <div
+        style="display: flex; justify-content: center; align-items: center; margin-top: 0.1rem; padding-bottom: 0.3rem; flex-wrap: wrap;">
+        <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2024041442号-1</a>
+        <!-- <span class="footer-span"> | </span>
+        <a href="https://ityufu.com/blog/sitemap.xml" target="_blank">SiteMap</a>
+        <span class="footer-span"> | </span>
+        <a href="https://itfisher.com/" target="_blank">IT Fisher</a> -->
+    </div>
+    <div id="flyfish" class="fly-fish" height="400"></div>
+    <script src="https://cdn.ityufu.com/js/fish.js"></script>     
+</footer>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="IT Fisher is an excellent technical blog Including iOS development, mini program development, front-end technology development summary and IT information, IT viewpoint sharing, commonly used small tools, and other content">
+    <meta name="author" content="ITFisher">
+    <meta name="keywords"
+        content="IT渔夫,ITFisher,ityufu,hudongdong,blog,ios,cocoapod,swift,swiftui,zxkit,uikit,android,ios开发,开发博客,技术博客,开发大佬,大佬博客,胡东东,小程序开发,微信小程序,支付宝小程序,Cocos2dx,web前端,前端开发,swift开发、swiftUI开发、web开发、微信小程序开发、支付宝小程序开发">
+    <title>IT Fisher - ITFisher.com - Hu Dongdong Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.ityufu.com/js/jquery-3.6.0.min.js"></script>
+    <style>
+        html {
+            background: url(./static/button-bg.png) fixed #f3f3f3;
+            font-size: 100px;
+        }
+
+        @media screen and (max-width: 768px) {
+            html {
+                font-size: 80px;
+            }
+        }
+
+        body {
+            font-family: -apple-system-font, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #1a1a1a;
+            margin: 0rem;
+            background-color: transparent;
+            font-size: 0.16rem;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        footer {
+            margin-top: 0.4rem;
+            background-color: rgba(255, 255, 255, 0.6);
+            ;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .language-translate{
+            position: absolute;
+            margin-left: 3.6rem;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        .language-translate-image{
+            width: 0.25rem;
+            height: 0.25rem;
+            border-radius: 0;
+            animation: none;
+            margin-right: 0.06rem;
+        }
+
+        .img-avatar {
+            width: 130px;
+            height: 130px;
+            border: 0 solid
+        }
+
+        .img-avatar:hover {
+            border-width: 5px;
+            animation: rotation .5s;
+            border-width: 5px;
+            border-color: rgba(0, 152, 116, 1);
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg) scale(1.0);
+                
+            }
+            to {
+                -webkit-transform: rotate(360deg) scale(1.5);
+            }
+        }
+
+        h1, h2 {
+            color: #1a1a1a;
+        }
+
+        h2 {
+            text-align: center;
+            line-height: 1.75;
+            font-size: 0.15rem;
+            font-weight: bold;
+            display: table;
+            margin: 4em auto 2em;
+            padding: 0 0.2em;
+            background: rgba(0, 152, 116, 1);
+            color: #fff;
+            border-radius: 0.04rem;
+            padding-left: 0.16rem;
+            padding-right: 0.06rem;
+            border-bottom: 0.04rem solid #f3f3f3;
+            border-right: 0.1rem solid transparent;
+
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .header-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.1rem;
+        }
+
+        .header-links-icon {
+            width: 0.24rem;
+            height: 0.24rem;
+            padding: 0.08rem;
+            margin: 0.12rem;
+            background-color: #1a1a1a;
+        }
+
+        .header-links-icon:hover {
+            background-color: #1a1a1a;
+            box-shadow: 0 0.08rem 0.16rem rgba(0, 0, 0, 0.5);
+            transform: scale(1.15);
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+        }
+
+        section {
+            margin-top: 0.1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            color: #333333;
+            line-height: 1.8;
+            word-break: break-all;
+            text-align: center;
+            font-size: 0.16rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .content-text {
+            margin: auto;
+            width: 80%;
+            max-width: 8rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: max-content;
+            margin-top: 0.2rem;
+        }
+
+        th,
+        td {
+            border: 0.01rem solid #cccccc;
+            text-align: left;
+            padding: 0.18rem;
+            white-space: nowrap;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding: 0.05rem 0.3rem;
+        }
+
+        li {
+            margin-bottom: 0.08rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(0.2rem);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img, h1 {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        #qr-image {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #009874;
+        }
+
+        /* 博客列表 */
+        .blog-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 0.2rem;
+            max-width: 11rem;
+        }
+
+        .blog-list-item {
+            position: relative;
+            width: 2rem;
+            margin: 0.2rem;
+            height: 1rem;
+            background-color: #fcfcfc;
+            border-radius: 0.1rem;
+            box-shadow: 0 0.08rem 0.16rem rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-list-item:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0.08rem 0.16rem rgba(0, 0, 0, 0.3);
+            transform: scale(1.03);
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .blog-list-item-title {
+            padding-top: 0.13rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .icon {
+                width: 0.3rem;
+                height: 0.3rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 0.3rem;
+                font-size: 0.18rem;
+                font-weight: bold;
+            }
+        }
+
+        .blog-list-item-title-icon {
+            width: 0.23rem;
+            height: 0.23rem;
+        }
+
+        .blog-list-item-title-text {
+            font-size: 0.18rem; 
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .footer-span{
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?cdbc3104a30a8d95861e3c238b88c7d5";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>        
+</head>
+
+<body>
+    <header>
+        <a href="https://hdd.im" target="_blank">
+            <img src="https://cdn.ityufu.com/static/avatar.png" alt="DamonHu" class="img-avatar" />
+        </a>
+        <div class="language-translate">
+            <a href="https://ityufu.com/" target="_self" style="display: flex; align-items: center;">
+                <img class="language-translate-image" src="https://cdn.ityufu.com/static/icon-language.png"/>
+                <p>简体中文</p>
+            </a>
+        </div>
+        <h1>DamonHu</h1>
+        <p>Software Developer</p>
+        <p>Resilient, Calm, Humble, Patient</p>
+        <div class="header-links">
+            <a href="https://github.com/DamonHu" target="_blank">
+                <img src="https://cdn.ityufu.com/static/github.png" alt="github" class="header-links-icon">
+            </a>
+            <a href="https://twitter.com/damonhu_x" target="_blank">
+                <img src="https://cdn.ityufu.com/static/twitter.png" alt="zhihu" class="header-links-icon">
+            </a>
+            <img src="https://cdn.ityufu.com/static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
+                style="cursor: pointer;">
+            <a href="https://weibo.com/u/1916674981" target="_blank">
+                <img src="https://cdn.ityufu.com/static/weibo.png" alt="weibo" class="header-links-icon">
+            </a>
+            <a href="mailto:dong765@qq.com" target="_blank">
+                <img src="https://cdn.ityufu.com/static/email.png" alt="email" class="header-links-icon">
+            </a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
+                src="https://cdn.ityufu.com/static/gongzhonghao.jpg">
+        </div>
+
+    </header>
+
+    <section id="blog">
+        <h2>My Blog</h2>
+        <div class="blog-list" style="margin-top: 0rem;">
+            <a href="https://itfisher.com/blog" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <img src="https://cdn.ityufu.com/static/icon-en.png" class="blog-list-item-title-icon" alt="IT Fisher" style="margin-right: 0.05rem;">
+                        <p style="font-size: 0.18rem; font-weight: bold; ">itFisher.com</p>
+                    </div>
+                    <p style="margin-top: 0.1rem; font-weight: bold;">Start Reading >></p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="text-align: left;" class="content-text">👋 Hello, I am DamonHu, a Scorpio born in 1991. A seasoned iOS developer. I have developed cocos2d-x mobile game, WeChat&Alipay&Baidu applet, blockchain project and digital collection business. In my spare time, I also write a blog, develop some open source code and websites.
+        </p>
+        <p style="text-align: left;" class="content-text">👨‍💻 At present, I am in charge of a Mini Program project with about 400000 daily active users. If you have any business cooperation or volume change business, please feel free to contact me.</p>
+        <p style="font-size: 0.18rem; font-weight: bold; text-align: left;" class="content-text">🧐 Now I am very interested in AI and are actively learning AI tools.</p>
+    </section>
+
+    
+
+    <section id="demo">
+        <h2>Amateur Project</h2>
+        <p class="content-text">These are some gadgets I make in my spare time, just for entertainment.</p>
+        <p style="font-size: 0.18rem; font-weight: bold;" class="content-text">You can also visit my GitHub home page, where several open source projects are available for development</p>
+        <div class="blog-list">
+            <a href="https://ityufu.com/" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <img src="https://cdn.ityufu.com/static/icon-cn.png" alt="IT渔夫" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
+                        <p class="blog-list-item-title-text">中文博客</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">itYuFu.com</p>
+                </div>
+            </a>
+            <a href="https://fullnull.com" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <p class="icon">📝</p>
+                        <p class="blog-list-item-title-text">Online Tools</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">fullnull.com</p>
+                </div>
+            </a>
+            <a href="https://videodd.com" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <p class="icon">🎥</p>
+                        <p class="blog-list-item-title-text">Video Download</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">videoDD.com</p>
+                </div>
+            </a>
+            <a href="https://page.cm" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <p class="icon">🌐</p>
+                        <p class="blog-list-item-title-text">AI Web navigation</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">page.cm</p>
+                </div>
+            </a>
+            <a href="https://chat.peatool.com" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <p class="icon">🍪</p>
+                        <p class="blog-list-item-title-text">Gemini Chat</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">chat.peaTool.com</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Swift</li>
+            <li>Objective-C</li>
+            <li>Cocos2d-x</li>
+            <li>HTML5&CSS3</li>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>Shanghai Qinlian Internet of Things Co., Ltd. - Technical Development Director - June 2020- present</li>
+            <li>Shanghai Qinlian Internet of Things Co., Ltd. - Front end Development Manager - July 2017- June 2020</li>
+            <li>Shanghai Jidong Network Technology Co., Ltd. - Game Development Engineer - January 2015 to June 2017</li>
+            <li>Beijing Ourpalm Co., Ltd - Game Development Engineer - September 2013 to January 2015</li>
+        </ul>
+    </section>
+
+    <section id="study">
+        <h2>Educational Background</h2>
+        <p  class="content-text"> Bachelor of Engineering-Information Engineering-Henan University of Science and Technology</p>
+    </section>
+
+    <script>
+        function showImage() {
+            var image = document.getElementById("qr-image");
+            if (image.style.display === "none") {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        }
+    </script>
+</body>
+<footer>
+    <hr style="height:1px;border:none;border-top:1px dashed rgba(0, 152, 116, 0.3);" />
+    <p style="margin-top: 0.5rem;">Copyright © 2019 DamonHu. All rights reserved.</p>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 0.1rem; padding-bottom: 0.3rem; flex-wrap: wrap;">
+        <a href="https://ityufu.com" target="_blank">IT渔夫中文版</a>
+        <span class="footer-span"> | </span>
+        <a href="https://itfisher.com/blog/sitemap.xml" target="_blank">SiteMap</a>
+    </div>
+    <div id="flyfish" class="fly-fish" height="400"></div>
+    <script src="https://cdn.ityufu.com/js/fish.js"></script>
+</footer>
+
+</html>
