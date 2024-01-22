@@ -11,7 +11,7 @@
     <title>IT Fisher - ITFisher.com - Hu Dongdong Blog</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.ityufu.com/js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <style>
         html {
             background: url(./static/button-bg.png) fixed #f3f3f3;
@@ -288,12 +288,12 @@
 
 <body>
     <header>
-        <a href="https://hdd.im" target="_blank">
-            <img src="https://cdn.ityufu.com/static/avatar.png" alt="DamonHu" class="img-avatar" />
+        <a href="./index.html">
+            <img src="./static/avatar.png" alt="DamonHu" class="img-avatar" />
         </a>
         <div class="language-translate">
-            <a href="https://ityufu.com/" target="_self" style="display: flex; align-items: center;">
-                <img class="language-translate-image" src="https://cdn.ityufu.com/static/icon-language.png"/>
+            <a href="./about.html" target="_self" style="display: flex; align-items: center;">
+                <img class="language-translate-image" src="./static/icon-language.png"/>
                 <p>简体中文</p>
             </a>
         </div>
@@ -301,38 +301,40 @@
         <p>Software Developer</p>
         <p>Resilient, Calm, Humble, Patient</p>
         <div class="header-links">
+            <a href="https://hdd.im">
+                <img src="./static/icon-home.png" alt="home" class="header-links-icon">
+            </a>
             <a href="https://github.com/DamonHu" target="_blank">
-                <img src="https://cdn.ityufu.com/static/github.png" alt="github" class="header-links-icon">
+                <img src="./static/github.png" alt="github" class="header-links-icon">
             </a>
             <a href="https://twitter.com/damonhu_x" target="_blank">
-                <img src="https://cdn.ityufu.com/static/twitter.png" alt="zhihu" class="header-links-icon">
+                <img src="./static/twitter.png" alt="zhihu" class="header-links-icon">
             </a>
-            <img src="https://cdn.ityufu.com/static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
+            <img src="./static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
                 style="cursor: pointer;">
             <a href="https://weibo.com/u/1916674981" target="_blank">
-                <img src="https://cdn.ityufu.com/static/weibo.png" alt="weibo" class="header-links-icon">
+                <img src="./static/weibo.png" alt="weibo" class="header-links-icon">
             </a>
             <a href="mailto:dong765@qq.com" target="_blank">
-                <img src="https://cdn.ityufu.com/static/email.png" alt="email" class="header-links-icon">
+                <img src="./static/email.png" alt="email" class="header-links-icon">
             </a>
         </div>
         <div style="display: flex; align-items: center; justify-content: center;">
             <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
-                src="https://cdn.ityufu.com/static/gongzhonghao.jpg">
+                src="./static/gongzhonghao.jpg">
         </div>
 
     </header>
 
-    <section id="blog">
-        <h2>My Blog</h2>
-        <div class="blog-list" style="margin-top: 0rem;">
-            <a href="https://itfisher.com/blog" target="_blank">
-                <div class="blog-list-item">
+    <section id="home">
+        <div class="blog-list" style="margin-top: 0rem; ">
+            <a href="./index.html">
+                <div class="blog-list-item" style="background-color: #333333;">
                     <div class="blog-list-item-title">
-                        <img src="https://cdn.ityufu.com/static/icon-en.png" class="blog-list-item-title-icon" alt="IT Fisher" style="margin-right: 0.05rem;">
-                        <p style="font-size: 0.18rem; font-weight: bold; ">itFisher.com</p>
+                        <img src="./static/icon-home.png" class="blog-list-item-title-icon" alt="back to home" style="margin-right: 0.05rem;">
+                        <p class="blog-list-item-title-text" style="color: #ffffff;">hdd.im</p>
                     </div>
-                    <p style="margin-top: 0.1rem; font-weight: bold;">Start Reading >></p>
+                    <p style="margin-top: 0.1rem; font-weight: bold; color: #ffffff;"> << Home</p>
                 </div>
             </a>
         </div>
@@ -346,59 +348,17 @@
         <p style="font-size: 0.18rem; font-weight: bold; text-align: left;" class="content-text">🧐 Now I am very interested in AI and are actively learning AI tools.</p>
     </section>
 
-    
-
-    <section id="demo">
-        <h2>Amateur Project</h2>
-        <p class="content-text">These are some gadgets I make in my spare time, just for entertainment.</p>
-        <p style="font-size: 0.18rem; font-weight: bold;" class="content-text">You can also visit my GitHub home page, where several open source projects are available for development</p>
-        <div class="blog-list">
-            <a href="https://ityufu.com/" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <img src="https://cdn.ityufu.com/static/icon-cn.png" alt="IT渔夫" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
-                        <p class="blog-list-item-title-text">中文博客</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">itYuFu.com</p>
-                </div>
-            </a>
-            <a href="https://fullnull.com" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <p class="icon">📝</p>
-                        <p class="blog-list-item-title-text">Online Tools</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">fullnull.com</p>
-                </div>
-            </a>
-            <a href="https://videodd.com" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <p class="icon">🎥</p>
-                        <p class="blog-list-item-title-text">Video Download</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">videoDD.com</p>
-                </div>
-            </a>
-            <a href="https://page.cm" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <p class="icon">🌐</p>
-                        <p class="blog-list-item-title-text">AI Web navigation</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">page.cm</p>
-                </div>
-            </a>
-            <a href="https://chat.peatool.com" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <p class="icon">🍪</p>
-                        <p class="blog-list-item-title-text">Gemini Chat</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">chat.peaTool.com</p>
-                </div>
-            </a>
-        </div>
+    <section id="project">
+        <h2>Project</h2>
+        <ul>
+            <li>守护签</li>
+            <li>步步挣</li>
+            <li>颜值招聘</li>
+            <li>疯狂捕鱼</li>
+            <li>加勒比海盗OL</li>
+            <li>战国之道</li>
+            <li>……</li>
+        </ul>
     </section>
 
     <section id="skills">
@@ -448,7 +408,7 @@
         <a href="https://itfisher.com/blog/sitemap.xml" target="_blank">SiteMap</a>
     </div>
     <div id="flyfish" class="fly-fish" height="400"></div>
-    <script src="https://cdn.ityufu.com/js/fish.js"></script>
+    <script src="./js/fish.js"></script>
 </footer>
 
 </html>

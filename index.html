@@ -12,7 +12,7 @@
     <title>Damon胡东东</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.ityufu.com/js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <style>
         html {
             background: url(./static/button-bg.png) fixed #f3f3f3;
@@ -46,6 +46,30 @@
         header {
             text-align: center;
             padding-top: 0.5rem;
+        }
+
+        .img-avatar {
+            width: 130px;
+            height: 130px;
+            border: 0 solid
+        }
+
+        .img-avatar:hover {
+            border-width: 5px;
+            animation: rotation .5s;
+            border-width: 5px;
+            border-color: #009874;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg) scale(1.0);
+                
+            }
+            to {
+                -webkit-transform: rotate(360deg) scale(1.5);
+            }
         }
 
         h1, h2 {
@@ -257,34 +281,51 @@
 
 <body>
     <header>
-        <img src="https://cdn.ityufu.com/static/avatar.png" alt="DamonHu" style="width: 130px; height: 130px;">
+        <a href="./about.html">
+            <img src="./static/avatar.png" alt="DamonHu" class="img-avatar" />
+        </a>
         <h1>DamonHu</h1>
         <p>哎哟~ 发现我的宝藏啦</p>
         <div class="header-links">
-            <a href="https://github.com/DamonHu" target="_blank">
+            <a href="./about.html">
                 <img src="./static/user.png" alt="github" class="header-links-icon">
             </a>
             <a href="https://github.com/DamonHu" target="_blank">
-                <img src="https://cdn.ityufu.com/static/github.png" alt="github" class="header-links-icon">
+                <img src="./static/github.png" alt="github" class="header-links-icon">
             </a>
             <a href="https://twitter.com/damonhu_x" target="_blank">
-                <img src="https://cdn.ityufu.com/static/twitter.png" alt="zhihu" class="header-links-icon">
+                <img src="./static/twitter.png" alt="zhihu" class="header-links-icon">
             </a>
-            <img src="https://cdn.ityufu.com/static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
+            <img src="./static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
                 style="cursor: pointer;">
             <a href="https://weibo.com/u/1916674981" target="_blank">
-                <img src="https://cdn.ityufu.com/static/weibo.png" alt="weibo" class="header-links-icon">
+                <img src="./static/weibo.png" alt="weibo" class="header-links-icon">
             </a>
             <a href="mailto:dong765@qq.com" target="_blank">
-                <img src="https://cdn.ityufu.com/static/email.png" alt="email" class="header-links-icon">
+                <img src="./static/email.png" alt="email" class="header-links-icon">
             </a>
         </div>
         <div style="display: flex; align-items: center; justify-content: center;">
             <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
-                src="https://cdn.ityufu.com/static/gongzhonghao.jpg">
+                src="./static/gongzhonghao.jpg">
         </div>
 
     </header>
+
+    <section id="blog">
+        <h2>我的博客</h2>
+        <div class="blog-list">
+            <a href="https://itFisher.com" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <img src="./static/icon-cn.png" alt="IT渔夫" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
+                        <p class="blog-list-item-title-text">IT渔夫</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">itFisher.com</p>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <section id="demo">
         <h2>常用工具</h2>
@@ -345,29 +386,6 @@
             </a>
         </div>
     </section>
-    <section id="blog">
-        <h2>我的博客</h2>
-        <div class="blog-list">
-            <a href="https://ityufu.com" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <img src="https://cdn.ityufu.com/static/icon-cn.png" alt="IT渔夫" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
-                        <p class="blog-list-item-title-text">中文</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">itYuFu.com</p>
-                </div>
-            </a>
-            <a href="https://itfisher.com" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <img src="https://cdn.ityufu.com/static/icon-en.png" alt="IT Fisher" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
-                        <p class="blog-list-item-title-text">English</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">itFisher.com</p>
-                </div>
-            </a>
-        </div>
-    </section>
     <!-- <section id="info" style="margin-top: 0.8rem;">
         <p>调试信息: 仅用于前端展示</p>
         <div class="dev-info" id="ip"></div>
@@ -396,7 +414,7 @@
     <hr style="height:1px;border:none;border-top:1px dashed rgba(0, 152, 116, 0.3);" />
     <p style="margin-top: 0.5rem;">Copyright © 2019 DamonHu. All rights reserved.</p>
     <div id="flyfish" class="fly-fish" height="400"></div>
-    <script src="https://cdn.ityufu.com/js/fish.js"></script>
+    <script src="./js/fish.js"></script>
 </footer>
 
 </html>
