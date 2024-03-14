@@ -27,54 +27,46 @@
 
 <body>
     <header>
-        <a href="./about.html">
-            <img src="./static/avatar.png" alt="DamonHu" class="img-avatar" />
-        </a>
-        <h1>胡东东DamonHu</h1>
-        <p>哎哟~ 发现我的宝藏啦🎉</p>
-        <div class="header-links">
+        <div class="header-content">
             <a href="./about.html">
-                <img src="./static/profile_w.png" alt="github" class="header-links-icon">
+                <img src="./static/avatar.png" alt="DamonHu" class="img-avatar" />
             </a>
-            <a href="https://github.com/DamonHu" target="_blank">
-                <img src="./static/github.png" alt="github" class="header-links-icon">
-            </a>
-            <a href="https://twitter.com/damonhu_x" target="_blank">
-                <img src="./static/twitter.png" alt="twitter" class="header-links-icon">
-            </a>
-            <img src="./static/wechat.png" alt="wechat" onclick="showImage()" class="header-links-icon"
-                style="cursor: pointer;">
-            <a href="https://weibo.com/u/1916674981" target="_blank">
-                <img src="./static/weibo.png" alt="weibo" class="header-links-icon">
-            </a>
-            <a href="mailto:dong765@qq.com" target="_blank">
-                <img src="./static/email.png" alt="email" class="header-links-icon">
-            </a>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-            <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
-                src="./static/gongzhonghao.jpg">
-        </div>
-
-    </header>
-
-    <section id="blog">
-        <h2>我的博客</h2>
-        <div class="blog-list">
+            <h1>胡东东DamonHu</h1>
+            <p style="color: #fff;">哎哟~ 发现我的宝藏啦🎉</p>
+            <div class="header-links">
+                <a href="./about.html">
+                    <img src="./static/profile_w.png" alt="github" class="header-links-icon">
+                </a>
+                <a href="https://github.com/DamonHu" target="_blank">
+                    <img src="./static/github.png" alt="github" class="header-links-icon">
+                </a>
+                <a href="https://twitter.com/damonhu_x" target="_blank">
+                    <img src="./static/twitter.png" alt="twitter" class="header-links-icon">
+                </a>
+                <img src="./static/wechat.png" alt="wechat" onclick="showImage()" class="header-links-icon"
+                    style="cursor: pointer;">
+                <a href="https://weibo.com/u/1916674981" target="_blank">
+                    <img src="./static/weibo.png" alt="weibo" class="header-links-icon">
+                </a>
+                <a href="mailto:dong765@qq.com" target="_blank">
+                    <img src="./static/email.png" alt="email" class="header-links-icon">
+                </a>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
+                    src="./static/gongzhonghao.jpg" />
+            </div>
             <a href="https://ddceo.com" target="_blank">
-                <div class="blog-list-item">
-                    <div class="blog-list-item-title">
-                        <img src="./static/icon-cn.png" alt="东哥笔记" class="blog-list-item-title-icon" style="margin-right: 0.05rem;">
-                        <p class="blog-list-item-title-text">东哥笔记</p>
-                    </div>
-                    <p style="margin-top: 0.1rem;">DDCEO.com</p>
+                <div class="blog-button">
+                    <img src="./static/icon-blog.png" alt="arrow" style="width: 0.3rem; height: 0.3rem;"/>
+                    <p class="blog-button-text">东哥笔记</p>
                 </div>
             </a>
+            
         </div>
-    </section>
+    </header>
 
     <section id="demo">
-        <h2>常用工具</h2>
         <div class="blog-list">
             <a href="https://fullnull.com/aliurlencode" target="_blank">
                 <div class="blog-list-item">
@@ -112,24 +104,42 @@
                     <p style="margin-top: 0.1rem;">videoDD.com</p>
                 </div>
             </a>
-            <!-- <a href="https://lazypig.net" target="_blank">
+            <a href="https://lazypig.net" target="_blank">
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
                         <p class="icon">🌐</p>
                         <p class="blog-list-item-title-text">AI网址导航</p>
                     </div>
-                    <p style="margin-top: 0.1rem;">lazypig.net</p>
+                    <p style="margin-top: 0.1rem;">快捷寻找AI灵感</p>
                 </div>
-            </a> -->
-            <!-- <a href="https://chat.peatool.com" target="_blank">
+            </a>
+            <a href="https://tinypng.com/" target="_blank">
                 <div class="blog-list-item">
                     <div class="blog-list-item-title">
-                        <p class="icon">🍪</p>
-                        <p class="blog-list-item-title-text">Gemini Chat</p>
+                        <p class="icon">📸</p>
+                        <p class="blog-list-item-title-text">图片压缩</p>
                     </div>
-                    <p style="margin-top: 0.1rem;">谷歌聊天工具</p>
+                    <p style="margin-top: 0.1rem;">一键压缩图片</p>
                 </div>
-            </a> -->
+            </a>
+            <a href="https://pixabay.com/zh/" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <p class="icon">🌄</p>
+                        <p class="blog-list-item-title-text">正版图片下载</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">免费可商用</p>
+                </div>
+            </a>
+            <a href="https://fonts.safe.360.cn/" target="_blank">
+                <div class="blog-list-item">
+                    <div class="blog-list-item-title">
+                        <p class="icon">📝</p>
+                        <p class="blog-list-item-title-text">商用字体检测</p>
+                    </div>
+                    <p style="margin-top: 0.1rem;">本机可商用字体</p>
+                </div>
+            </a>
         </div>
     </section>
     <!-- <section id="info" style="margin-top: 0.8rem;">
