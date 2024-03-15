@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="IT Fisher is an excellent technical blog Including iOS development, mini program development, front-end technology development summary and IT information, IT viewpoint sharing, commonly used small tools, and other content">
-    <meta name="author" content="ITFisher">
+    <meta name="description"
+        content="Damon胡东东，资深软件开发者。有着优秀的产品直觉，也是一个优秀的博客作家，创立了IT渔夫、胡东东博客等站点。擅长iOS开发、小程序开发、前端技术开发。拥有丰富的开发经验。">
+    <meta name="author" content="hdd.im">
     <meta name="keywords"
-        content="IT渔夫,ITFisher,ityufu,hudongdong,blog,ios,cocoapod,swift,swiftui,zxkit,uikit,android,ios开发,开发博客,技术博客,开发大佬,大佬博客,胡东东,小程序开发,微信小程序,支付宝小程序,Cocos2dx,web前端,前端开发,swift开发、swiftUI开发、web开发、微信小程序开发、支付宝小程序开发">
-    <title>IT Fisher - ITFisher.com - Hu Dongdong Blog</title>
+        content="hudongdong,blog,ios,cocoapod,swift,swiftui,zxkit,uikit,android,ios开发,开发博客,技术博客,开发大佬,大佬博客,胡东东,小程序开发,微信小程序,支付宝小程序,Cocos2dx,web前端,前端开发,swift开发、swiftUI开发、web开发、微信小程序开发、支付宝小程序开发">
+    <title>Damon胡东东 - 东哥的工具站 - hdd.im</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script>
         var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?cdbc3104a30a8d95861e3c238b88c7d5";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cef5f634e3fa079ec32f442d87828fe5";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
         })();
-        </script>        
+    </script>
 </head>
 
 <body>
     <header>
-        <a href="./">
-            <img src="./static/avatar.png" alt="DamonHu" class="img-avatar" />
-        </a>
-        <div class="language-translate">
-            <a href="./about.html" target="_self" style="display: flex; align-items: center;">
-                <img class="language-translate-image" src="./static/icon-language.png"/>
-                <p>简体中文</p>
-            </a>
+        <div class="header-content">
+            <div class="header-content-bg"></div>
+            <div class="header-content-info">
+                <a href="./">
+                    <img src="./static/avatar.png" alt="DamonHu" class="img-avatar" />
+                </a>
+                <div class="language-translate">
+                    <a href="./about.html" target="_self" style="display: flex; align-items: center;">
+                        <img class="language-translate-image" src="./static/icon-language.png" />
+                        <p style="color: #ffffff; font-weight: bold; font-size: 0.17rem;">简体中文</p>
+                    </a>
+                </div>
+                <h1>DamonHu</h1>
+                <p style="color: #ffffff;">Software Developer</p>
+                <p style="color: #ffffff;">Resilient, Calm, Humble, Patient</p>
+                <div class="header-links">
+                    <a href="https://hdd.im">
+                        <img src="./static/icon-home.png" alt="home" class="header-links-icon">
+                    </a>
+                    <a href="https://github.com/DamonHu" target="_blank">
+                        <img src="./static/github.png" alt="github" class="header-links-icon">
+                    </a>
+                    <a href="https://twitter.com/damonhu_x" target="_blank">
+                        <img src="./static/twitter.png" alt="zhihu" class="header-links-icon">
+                    </a>
+                    <img src="./static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
+                        style="cursor: pointer;">
+                    <a href="https://weibo.com/u/1916674981" target="_blank">
+                        <img src="./static/weibo.png" alt="weibo" class="header-links-icon">
+                    </a>
+                    <a href="mailto:dong765@qq.com" target="_blank">
+                        <img src="./static/email.png" alt="email" class="header-links-icon">
+                    </a>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
+                        src="./static/gongzhonghao.jpg">
+                </div>
+            </div>
         </div>
-        <h1>DamonHu</h1>
-        <p>Software Developer</p>
-        <p>Resilient, Calm, Humble, Patient</p>
-        <div class="header-links">
-            <a href="https://hdd.im">
-                <img src="./static/icon-home.png" alt="home" class="header-links-icon">
-            </a>
-            <a href="https://github.com/DamonHu" target="_blank">
-                <img src="./static/github.png" alt="github" class="header-links-icon">
-            </a>
-            <a href="https://twitter.com/damonhu_x" target="_blank">
-                <img src="./static/twitter.png" alt="zhihu" class="header-links-icon">
-            </a>
-            <img src="./static/wechat.png" alt="jianshu" onclick="showImage()" class="header-links-icon"
-                style="cursor: pointer;">
-            <a href="https://weibo.com/u/1916674981" target="_blank">
-                <img src="./static/weibo.png" alt="weibo" class="header-links-icon">
-            </a>
-            <a href="mailto:dong765@qq.com" target="_blank">
-                <img src="./static/email.png" alt="email" class="header-links-icon">
-            </a>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-            <img style="border-radius: 0; display: none; width: 1.8rem; height: 1.8rem;" id="qr-image"
-                src="./static/gongzhonghao.jpg">
-        </div>
+
 
     </header>
 
@@ -69,10 +77,12 @@
             <a href="./">
                 <div class="blog-list-item" style="background-color: #333333;">
                     <div class="blog-list-item-title">
-                        <img src="./static/icon-home.png" class="blog-list-item-title-icon" alt="back to home" style="margin-right: 0.05rem;">
+                        <img src="./static/icon-home.png" class="blog-list-item-title-icon" alt="back to home"
+                            style="margin-right: 0.05rem;">
                         <p class="blog-list-item-title-text" style="color: #ffffff;">hdd.im</p>
                     </div>
-                    <p style="margin-top: 0.1rem; font-weight: bold; color: #ffffff;"> << Home</p>
+                    <p style="margin-top: 0.1rem; font-weight: bold; color: #ffffff;">
+                        << Home</p>
                 </div>
             </a>
         </div>
@@ -80,10 +90,16 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p style="text-align: left;" class="content-text">👋 Hello, I am DamonHu, a Scorpio born in 1991. A seasoned iOS developer. I have developed cocos2d-x mobile game, WeChat&Alipay&Baidu applet, blockchain project and digital collection business. In my spare time, I also write a blog, develop some open source code and websites.
+        <p style="text-align: left;" class="content-text">👋 Hello, I am DamonHu, a Scorpio born in 1991. A seasoned iOS
+            developer. I have developed cocos2d-x mobile game, WeChat&Alipay&Baidu applet, blockchain project and
+            digital collection business. In my spare time, I also write a blog, develop some open source code and
+            websites.
         </p>
-        <p style="text-align: left;" class="content-text">👨‍💻 At present, I am in charge of a Mini Program project with about 400000 daily active users. If you have any business cooperation or volume change business, please feel free to contact me.</p>
-        <p style="font-size: 0.18rem; font-weight: bold; text-align: left;" class="content-text">🧐 Now I am very interested in AI and are actively learning AI tools.</p>
+        <p style="text-align: left;" class="content-text">👨‍💻 At present, I am in charge of a Mini Program project
+            with about 400000 daily active users. If you have any business cooperation or volume change business, please
+            feel free to contact me.</p>
+        <p style="font-size: 0.18rem; font-weight: bold; text-align: left;" class="content-text">🧐 Now I am very
+            interested in AI and are actively learning AI tools.</p>
     </section>
 
     <section id="project">
@@ -115,15 +131,18 @@
         <h2>Work Experience</h2>
         <ul>
             <li>Shanghai Qinlian Internet of Things Co., Ltd. - Technical Development Director - June 2020- present</li>
-            <li>Shanghai Qinlian Internet of Things Co., Ltd. - Front end Development Manager - July 2017- June 2020</li>
-            <li>Shanghai Jidong Network Technology Co., Ltd. - Game Development Engineer - January 2015 to June 2017</li>
+            <li>Shanghai Qinlian Internet of Things Co., Ltd. - Front end Development Manager - July 2017- June 2020
+            </li>
+            <li>Shanghai Jidong Network Technology Co., Ltd. - Game Development Engineer - January 2015 to June 2017
+            </li>
             <li>Beijing Ourpalm Co., Ltd - Game Development Engineer - September 2013 to January 2015</li>
         </ul>
     </section>
 
-    <section id="study">
+    <section id="study" style="padding-bottom: 1.5rem;">
         <h2>Educational Background</h2>
-        <p  class="content-text"> Bachelor of Engineering-Information Engineering-Henan University of Science and Technology</p>
+        <p class="content-text"> Bachelor of Engineering-Information Engineering-Henan University of Science and
+            Technology</p>
     </section>
 
     <script>
@@ -138,15 +157,19 @@
     </script>
 </body>
 <footer>
-    <hr style="height:1px;border:none;border-top:1px dashed rgba(0, 152, 116, 0.3);" />
-    <p style="margin-top: 0.5rem;">Copyright © 2019 DamonHu. All rights reserved.</p>
-    <div style="display: flex; justify-content: center; align-items: center; margin-top: 0.1rem; padding-bottom: 0.3rem; flex-wrap: wrap;">
-        <a href="https://ityufu.com" target="_blank">IT渔夫中文版</a>
-        <span class="footer-span"> | </span>
-        <a href="https://itfisher.com/blog/sitemap.xml" target="_blank">SiteMap</a>
+    <div class="footer-content">
+        <p style="padding-bottom: 0.1rem;">Copyright © 2019 DamonHu. All rights reserved.</p>
+        <div class="dev-info" id="ip"></div>
+        <div class="dev-info" id="ua"></div>
     </div>
-    <div id="flyfish" class="fly-fish" height="400"></div>
     <script src="./js/fish.js"></script>
+    <script type="application/javascript">
+        function getIP(json) {
+            document.getElementById("ip").innerHTML = "IP: " + json.ip
+            document.getElementById("ua").innerHTML = "UA: " + navigator.userAgent
+        }
+    </script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </footer>
 
 </html>
